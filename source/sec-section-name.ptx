@@ -11,21 +11,22 @@
     \leqslant  \int_{n-1}^{n}f(t)\operatorname d t
   </me>
   La minoratiion est en fait valable pour tout <m>n\in\mathbb N</m> alors que la majoration est valable pour tout <m>n\in\mathbb N^*</m>.
+  </p>
 
-  De ce fait on a le théorème suivant
+  <p> 
+    De ce fait on a le théorème suivant
+  </p>
 
-<p>
-</p>
   <theorem xml:id="thm-serint">
     <title>de comparaison séries/intégrales</title>
     
     <statement>
       <p>
-         <ul>
+         <ol>
     <li>
       <p>
-        <m>\forall n\in\mathbb N^*,\; \int_0^{n} f(t)\operatorname d t \leqslant
-        \sum_{k=0}^nf(k) \leqslant f(0) +\int_1^{n+1} f(t)\operatorname d t</m>
+        <m>\forall n\in\mathbb N^*,\; \int_0^{n+1} f(t)\operatorname d t \leqslant
+        \sum_{k=0}^nf(k) \leqslant f(0) +\int_0^{n} f(t)\operatorname d t</m>
       </p>
     </li>
     <li>
@@ -54,11 +55,10 @@
       </ul>
       </p>
     </li>
-  </ul>
+  </ol>
       </p>
     </statement>
   </theorem>
-  </p>
 <remark>
 <p>
   On peut replacer l'intervalle <m>[0,+\infty[</m> par un intervalle de la forme <m>[p,+\infty[</m> où <m>p</m> est un entier <m>\geqslant0</m> lorsque la fonction <m>f</m> n'est pas définie sur <m>[0,+\infty[</m>. 
