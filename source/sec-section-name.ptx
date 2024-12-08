@@ -3,13 +3,65 @@
 <section xml:id="sec-section-name" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Comparaison séries/intégrales</title>
 
-  <p> On considère une fonction décrosisante 
-  <m> f:[a,+\infty[ \longrightarrow \mathbb R</m>. Alors pour tout <m>m\in\mathbb N^*</m>
+  <p> On considère une fonction continue par morceaux, <alert> décroissante et positive </alert>
+  <m> f:{}[0,+\infty[{} \longrightarrow \mathbb R</m>. Alors pour tout <m>m\in\mathbb N^*</m>
   <me>
-    \int_n^{n+1}f(t)\operatorname d t \leqslant
-    f(n) \leqslant  \int_{n-1}^{n}f(t)\operatorname d t
+    \int_n^{n+1}f(t)\operatorname d t \leqslant 
+    f(n)
+    \leqslant  \int_{n-1}^{n}f(t)\operatorname d t
   </me>
-  
-  </p>
+  La minoratiion est en fait valable pour tout <m>n\in\mathbb N</m> alors que la majoration est valable pour tout <m>n\in\mathbb N^*</m>.
 
+  De ce fait on a le théorème suivant
+
+<p>
+</p>
+  <theorem xml:id="thm-serint">
+    <title>de comparaison séries/intégrales</title>
+    
+    <statement>
+      <p>
+         <ul>
+    <li>
+      <p>
+        <m>\forall n\in\mathbb N^*,\; \int_0^{n} f(t)\operatorname d t \leqslant
+        \sum_{k=0}^nf(k) \leqslant f(0) +\int_1^{n+1} f(t)\operatorname d t</m>
+      </p>
+    </li>
+    <li>
+      <p> 
+        la série <m>\sum f(n)</m> converge si et seulement si l'intégrale  <m> \displaystyle\int_0^{+\infty} f(t)\operatorname d t</m> converge et dans ce cas :
+      <ul>
+        <li>
+          <p>
+            <m>\int_0^{+\infty} f(t)\operatorname d t \leqslant
+        \sum_{k=0}^{+\infty}f(k) \leqslant f(0) +\int_0^{+\infty} f(t)\operatorname d t</m> 
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\forall n\in\N^* \int_{n+1}^{+\infty} f(t)\operatorname d t \leqslant
+        \sum_{k=n+1}^{+\infty}f(k) \leqslant \int_{n}^{+\infty} f(t)\operatorname d t</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            en particulier si <m>\displaystyle \int_n^{n+1}f(t)\mathrm d t=
+            o\left(\int_n^{+\infty}f(t)\mathrm d t\right)</m> alors 
+            <m>\displaystyle \sum_{k=n+1}^{+\infty}f(k)\sim \int_{n}^{+\infty}f(t)\mathrm dt </m>
+          </p>
+        </li>
+      </ul>
+      </p>
+    </li>
+  </ul>
+      </p>
+    </statement>
+  </theorem>
+  </p>
+<remark>
+<p>
+  On peut replacer l'intervalle <m>[0,+\infty[</m> par un intervalle de la forme <m>[p,+\infty[</m> où <m>p</m> est un entier <m>\geqslant0</m> lorsque la fonction <m>f</m> n'est pas définie sur <m>[0,+\infty[</m>. 
+  </p>
+</remark>
 </section>
