@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-section-name" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Section Title</title>
+  <title>Comparaison séries/intégrales</title>
 
-  <p> Text of section. </p>
+  <p> On considère une fonction décrosisante 
+  <m> f:[a,+\infty[ \longrightarrow \mathbb R</m>. Alors pour tout <m>m\in\mathbb N^*</m>
+  <me>
+    \int_n^{n+1}f(t)\operatorname d t \leqslant
+    f(n) \leqslant  \int_{n-1}^{n}f(t)\operatorname d t
+  </me>
+  
+  </p>
 
 </section>
